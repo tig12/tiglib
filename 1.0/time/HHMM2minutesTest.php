@@ -61,8 +61,7 @@ class HHMM2minutesTest extends TestCase{
     
     // ******************************************************
     /**
-        Tests if the function works when minuts or hours are expressed with a single digit,
-        in case of negative $str
+        Tests if the function works when separator is a strange string
     **/
     public function testSeparator(){
         $this->assertEquals( 124, HHMM2minutes::compute('02:04') );
