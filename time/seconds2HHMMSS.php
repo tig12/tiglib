@@ -27,6 +27,10 @@ class seconds2HHMMSS{
         $remain = $sec - $h * 3600;
         if($roundToMinute){
             $m = round($remain / 60);
+            if($m == 60){
+                $h++;
+                $m = 0;
+            }
             return str_pad($h, 2, '0', STR_PAD_LEFT) . ':' . str_pad($m, 2, '0', STR_PAD_LEFT);
         }
         $m = floor($remain / 60);

@@ -13,17 +13,17 @@ Installation is done by hand :
 - copy one by one the files you need, reproducing the hierarchy.
 
 Example :
-vendor/tiglib/1.0
+vendor/tiglib
     ├── autoload.php
     └── time
         └── HHMM2minutes.php
 
 In your code :
-require_once 'vendor/tiglib/1.0/autoload.php';
+require_once 'vendor/tiglib/autoload.php';
 use \tiglib\time\HHMM2minutes;
 echo HHMM2minutes::compute('12:34') . "\n";
 
 
 ---------- unit tests ----------
-phpunit --bootstrap 1.0/autoload.php 1.0/
-phpunit --bootstrap 1.0/autoload.php 1.0/time/HHMM2minutesTest
+phpunit --bootstrap autoload.php 
+phpunit --bootstrap autoload.php time/HHMM2minutesTest

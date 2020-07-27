@@ -13,14 +13,12 @@ use \tiglib\time\HHMM2minutes;
 
 class HHMM2minutesTest extends TestCase{
 
-    // ******************************************************
     public function test0(){
         $this->assertEquals( 0, HHMM2minutes::compute('+00:00') );
         $this->assertEquals( 0, HHMM2minutes::compute('+00:00') );
         $this->assertEquals( 0, HHMM2minutes::compute('-00:00') );
     }
     
-    // ******************************************************
     /** 
         Regular use cases
     **/
@@ -32,7 +30,6 @@ class HHMM2minutesTest extends TestCase{
         $this->assertEquals( 1439, HHMM2minutes::compute('23:59') );
     }
     
-    // ******************************************************
     /**
         Tests if the function works when minuts or hours are expressed with a single digit
     **/
@@ -47,7 +44,6 @@ class HHMM2minutesTest extends TestCase{
         $this->assertEquals( 124, HHMM2minutes::compute('+2:4') );
     }
     
-    // ******************************************************
     /**
         Tests if the function works when minuts or hours are expressed with a single digit,
         in case of negative $str
@@ -59,7 +55,6 @@ class HHMM2minutesTest extends TestCase{
         $this->assertEquals( -124, HHMM2minutes::compute('-2:4') );
     }
     
-    // ******************************************************
     /**
         Tests if the function works when separator is a strange string
     **/
@@ -69,7 +64,6 @@ class HHMM2minutesTest extends TestCase{
         $this->assertEquals( 124, HHMM2minutes::compute('02 04') );
     }
     
-    // ******************************************************
     /**
         Tests that the function return false for different values of $str.
     **/
