@@ -3,10 +3,6 @@ Provides utility code to use in php projects.
 Designed to copy the code needed, and nothing else.
 No dependency management
 
-Conventions :
-- Versions change only if incompatible changes are introduced.
-  New features and unit tests do not imply version change.
-
 Installation is done by hand :
 - in a project using tiglib, create a directory that will contain tiglib code (for example vendor/tiglib)
 - in this directory, copy src/autoload.php
@@ -22,7 +18,6 @@ In your code :
 require_once 'vendor/tiglib/autoload.php';
 use \tiglib\time\HHMM2minutes;
 echo HHMM2minutes::compute('12:34') . "\n";
-
 
 ---------- unit tests ----------
 phpunit --bootstrap autoload.php 
