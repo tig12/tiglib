@@ -1,24 +1,4 @@
 
-Provides utility code to use in php projects.
+Provides utility code to use in php and go projects.
 Designed to copy the code needed, and nothing else.
 No dependency management
-
-Installation is done by hand :
-- in a project using tiglib, create a directory that will contain tiglib code (for example vendor/tiglib)
-- in this directory, copy src/autoload.php
-- copy one by one the files you need, reproducing the hierarchy.
-
-Example :
-vendor/tiglib
-    ├── autoload.php
-    └── time
-        └── HHMM2minutes.php
-
-In your code :
-require_once 'vendor/tiglib/autoload.php';
-use \tiglib\time\HHMM2minutes;
-echo HHMM2minutes::compute('12:34') . "\n";
-
----------- unit tests ----------
-phpunit --bootstrap autoload.php 
-phpunit --bootstrap autoload.php time/HHMM2minutesTest.php
