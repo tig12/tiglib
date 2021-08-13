@@ -1,0 +1,4 @@
+To use go test (go 1.16)
+
+go env -w GO111MODULE=auto
+
