@@ -1,4 +1,4 @@
 
 Provides utility code to use in php and go projects.
 Designed to copy the code needed, and nothing else.
-No dependency management
+No dependency management.

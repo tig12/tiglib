@@ -1,5 +1,5 @@
 /**
-    Functions the index of an element in a slice
+    Functions to find the index of an element in a slice.
 **/
 package tiglib
 
