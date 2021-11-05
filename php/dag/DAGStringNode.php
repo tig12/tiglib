@@ -1,4 +1,3 @@
-
 <?php
 /******************************************************************************
     Represents a node of a DAG (Directed acyclic graph)
