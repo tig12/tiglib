@@ -1,23 +1,51 @@
 package tiglib
 
 import (
-    "testing"
+	"testing"
 )
-func TestNumberFormat(t *testing.T) {
-    n := 1000000
-    s := NumberFormat(n, ' ')
-	if s != "1 000 000" {
-		t.Error("NumberFormat(1000000, ' ') should be equal to '1 000 000'")
+
+func TestNumberFormatInt(t *testing.T) {
+
+	var tests = []struct {
+		input     int
+		displayed string
+		sep       rune
+		want      string
+	}{
+		{1000000, "1000000", ' ', "1 000 000"},
+		{1000000, "1000000", ',', "1,000,000"},
+		{999, "999", ',', "999"},
+		{0, "0", ' ', "0"},
+		{-0, "-0", ' ', "0"},
+		{+0, "+0", ' ', "0"},
+		{-2000, "-2000", ' ', "-2 000"},
 	}
-    s = NumberFormat(n, ',')
-	if s != "1,000,000" {
-		t.Error("NumberFormat(1000000, ',') should be equal to '1,000,000'")
+	for _, test := range tests {
+		if got := NumberFormat(test.input, test.sep); got != test.want {
+			t.Errorf("NumberFormat(%s, '%v') should be equal to '%s', got '%s'", test.displayed, test.sep, test.want, got)
+		}
 	}
-	n = 999
-    s = NumberFormat(n, ',')
-	if s != "999" {
-		t.Error("NumberFormat(999, ',') should be equal to '999'")
-	}
-    
 }
 
+func TestNumberFormatFloat64(t *testing.T) {
+
+	var tests = []struct {
+		input     float64
+		displayed string
+		sep       rune
+		want      string
+	}{
+		{1200.4, "1200.4", ' ', "1 200.4"},
+		{1200.4, "1200.4", ',', "1,200.4"},
+		{1200.0, "1200.0", ' ', "1 200"},
+		{-12056.0, "-12056.0", ' ', "-12 056"},
+		{0.0, "0.0", ' ', "0"},
+		{-0.0, "-0.0", ' ', "0"},
+		{+0.0, "+0.0", ' ', "0"},
+	}
+	for _, test := range tests {
+		if got := NumberFormat(test.input, test.sep); got != test.want {
+			t.Errorf("NumberFormat(%s, '%v') should be equal to '%s', got '%s'", test.displayed, test.sep, test.want, got)
+		}
+	}
+}
