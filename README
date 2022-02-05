@@ -1,4 +1,8 @@
 
-Provides utility code to use in php and go projects.
+Provides utility code to use in php, javascript and go projects.
+
 Designed to copy the code needed, and nothing else.
+
 No dependency management.
+
+Repository created by Thierry Graff, 2019-06-11.
