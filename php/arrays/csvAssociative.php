@@ -2,7 +2,9 @@
 /******************************************************************************
     Fills a csv file to an array of associative arrays.
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 08:49:25+02:00, Thierry Graff : Creation from old code.
     @history    2021-09-16 12:11:38+02:00, Thierry Graff : Throws an exception if $filename doesn't exist.
 ********************************************************************************/

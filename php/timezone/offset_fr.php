@@ -11,7 +11,9 @@
         => a precise computation should take into account the precise local situation
     Computations are based on "Traité de l'heure dans le monde", 5th edition, 1990
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2017-01-03 00:09:55+01:00, Thierry Graff : Creation 
     @history    2017-05-04 10:38:22+02:00, Thierry Graff : Adaptation for autonom use 
     @history    2019-06-11 10:41:23+02:00, Thierry Graff : Integration to tiglib

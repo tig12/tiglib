@@ -3,7 +3,9 @@
     str_pad() for multi-byte strings
     Adaptation of code from https://www.php.net/manual/en/function.str-pad.php
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-10-29 13:06:41+01:00, Thierry Graff : Creation
 ********************************************************************************/
 namespace tiglib\strings;

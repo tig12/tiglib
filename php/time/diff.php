@@ -5,7 +5,9 @@
     
     @todo       Unit test
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2021-02-25 21:36:31+01:00, Thierry Graff : Creation
 ********************************************************************************/
 

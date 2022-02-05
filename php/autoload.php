@@ -2,7 +2,9 @@
 /******************************************************************************
     Autoload function for namespace \tiglib
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-03 12:23:16+02:00, Thierry Graff : Creation
 ********************************************************************************/
 

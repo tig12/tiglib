@@ -1,7 +1,9 @@
 <?php
 /******************************************************************************
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 12:13:18+02:00, Thierry Graff : Creation
 ********************************************************************************/
 

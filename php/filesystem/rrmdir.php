@@ -4,7 +4,9 @@
     Adaptation of example code found at
     https://www.php.net/manual/en/function.rmdir.php
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2021-02-08 17:14:42+01:00, Thierry Graff : Creation
 ********************************************************************************/
 

@@ -2,7 +2,9 @@
 /******************************************************************************
     Converts a HH:MM:SS or HH:MM string (like 12:34:45 or 12:34) to the number of seconds it represents.
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-13 17:21:08+02:00, Thierry Graff : Creation
 ********************************************************************************/
 namespace tiglib\time;

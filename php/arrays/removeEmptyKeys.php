@@ -7,7 +7,9 @@
     by
     https://stackoverflow.com/users/1753349/vedmant
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-08-19 13:35:13+02:00, Thierry Graff : Creation from stackoverflow.com
 ********************************************************************************/
 namespace tiglib\arrays;

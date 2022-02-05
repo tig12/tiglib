@@ -2,7 +2,9 @@
 /******************************************************************************
     Computes the distance between two points identified by their longitudes and latitudes.
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 09:36:25+02:00, Thierry Graff : Creation from old code.
 ********************************************************************************/
 namespace tiglib\space;

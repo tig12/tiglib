@@ -2,7 +2,9 @@
 /******************************************************************************
     Transforms an ISO-8859-1 or UTF8 string to a string usable in a file name.
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 09:26:49+02:00, Thierry Graff : Creation from old code.
 ********************************************************************************/
 namespace tiglib\strings;

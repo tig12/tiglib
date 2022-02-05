@@ -3,10 +3,15 @@
     Existing newlines (\n) are preserved.
     Only lines (substrings without \n) containing more than <limit> chars are split
     Ex, limit = 20
+    Input string:
+    
     0---------0---------0
     This is the input string.
     A short line.
     The rest of the string
+    
+    Result:
+    
     0---------0---------0
     This is the input
     string.
@@ -14,15 +19,15 @@
     The rest of the
     string
 
-    @copyright  BDL, Bois du Larzac
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-04-07 14:39:39+02:00, Thierry Graff : Creation
 ********************************************************************************/
 package tiglib
 
 import (
 	"strings"
-	//"fmt"
 )
 
 func LimitLength(str string, limit int) []string {

@@ -5,7 +5,9 @@
     
     Needs the definition of constant DS = DIRECTORY_SEPARATOR
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-05-18 10:38:54+02:00, Thierry Graff : Creation
 ********************************************************************************/
 

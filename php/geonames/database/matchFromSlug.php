@@ -2,7 +2,9 @@
 /******************************************************************************
     Tries to match a place in geonames DB from the slug of a place.
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 11:22:33+02:00, Thierry Graff : Creation from existing code
 ********************************************************************************/
 namespace tiglib\geonames\database;

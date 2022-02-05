@@ -1,10 +1,12 @@
 /******************************************************************************
-    Renvoie la liste des clés d'une map.
-    Les clés doivent être des strings
+    Returns the list of keys of a map.
+    Keys must be strings.
 
-    PAS UTILISE parcequ'on ne peut pas passer n'importe quoi à la place de interface{}
+    NOT USED because interface{} can't replace all types.
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-01-16 15:19:29+01:00, Thierry Graff : Creation
 ********************************************************************************/
 

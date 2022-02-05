@@ -3,7 +3,9 @@
     Represents a node of a DAG (Directed acyclic graph)
     The value of a node is a string
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2021-07-29 17:10:25+02:00, Thierry Graff : Creation
     @history    2021-09-16 12:18:30+02:00, Thierry Graff : Integrate to tiglib
 ********************************************************************************/

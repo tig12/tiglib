@@ -2,7 +2,9 @@
 /******************************************************************************
     Fills a csv file to an array of regular arrays.
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-12-20 23:30:45+01:00, Thierry Graff : Creation
 ********************************************************************************/
 namespace tiglib\arrays;

@@ -2,7 +2,9 @@
 /******************************************************************************
     Computes informations about a city using geonames.org web service.
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 09:58:55+02:00, Thierry Graff : Creation from existing code.
 ********************************************************************************/
 namespace tiglib\geonames\webservice;

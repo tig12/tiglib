@@ -21,7 +21,9 @@
     THM says that the period starts at 1866-11-15
     This implementation conforms to FG.
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-07-25 18:44:49+02:00, Thierry Graff : Creation 
 ********************************************************************************/
 namespace tiglib\timezone;

@@ -15,7 +15,9 @@
       name.given: Juliette
       name.official.family: Lambert
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2021-08-13 09:12:35+02:00, Thierry Graff : Creation
 ********************************************************************************/
 namespace tiglib\arrays;

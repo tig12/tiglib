@@ -4,7 +4,9 @@
     
     @todo phpunit
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-07-27 12:16:40+02:00, Thierry Graff : Creation
 ********************************************************************************/
 

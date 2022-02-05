@@ -2,7 +2,9 @@
 /******************************************************************************
     Like sleep() but parameter is a nb of seconds, and it prints a message.
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 06:37:11+02:00, Thierry Graff : Creation
 ********************************************************************************/
 

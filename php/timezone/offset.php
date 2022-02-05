@@ -3,7 +3,9 @@
     - Offset computation using Olson database (default php behaviour)
     - Utility functions for offset computation
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 10:27:33+02:00, Thierry Graff : Creation from existing code.
     @history    2020-07-27 14:59:51+02:00, Thierry Graff : add format() and lg2offset()
 ********************************************************************************/

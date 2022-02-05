@@ -1,11 +1,12 @@
 <?php
 /******************************************************************************
 
-
     WARNING : works for positive numbers, but negative numbers must be tested and debugged
     (see unit test with -360)
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2021-02-28 10:18:57+01:00, Thierry Graff : Creation from old code
 ********************************************************************************/
 

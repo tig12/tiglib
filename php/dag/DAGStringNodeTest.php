@@ -1,4 +1,8 @@
 <?php
+/** 
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+**/
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'DAGStringNode.php';
 

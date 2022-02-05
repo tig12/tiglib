@@ -1,7 +1,9 @@
 <?php
 /******************************************************************************
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2021-05-12 02:19:55+01:00, Thierry Graff : Creation
 ********************************************************************************/
 namespace tiglib\arrays;

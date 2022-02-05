@@ -1,6 +1,9 @@
 /**
-    Functions testing if two slices are equal (contain the same elements)
-    Fore slices of bytes, use bytes.Equal()
+    Functions testing if two slices are equal (contain the same elements).
+    For slices of bytes, use bytes.Equal().
+    
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
 **/
 package tiglib
 

@@ -2,7 +2,9 @@
 /******************************************************************************
     Converts a nb of seconds to a HH:MM:SS string.
 
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2019-06-11 10:29:45+02:00, Thierry Graff : Creation from existing code.
 ********************************************************************************/
 namespace tiglib\time;
