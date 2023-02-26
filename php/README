@@ -1,17 +1,17 @@
 
 Installation is done by hand :
-- in a project using tiglib, create a directory that will contain tiglib code (for example vendor/tiglib)
+- in a project using tiglib, create a directory that will contain tiglib code (for example vendor/tig12/tiglib)
 - in this directory, copy autoload.php
 - copy one by one the files you need, reproducing the hierarchy.
 
 Example :
-vendor/tiglib
+vendor/tig12/tiglib
     ├── autoload.php
     └── time
         └── HHMM2minutes.php
 
 In your code :
-require_once 'vendor/tiglib/autoload.php';
+require_once 'vendor/tig12/tiglib/autoload.php';
 use \tiglib\time\HHMM2minutes;
 echo HHMM2minutes::compute('12:34') . "\n";
 
