@@ -6,9 +6,9 @@ package tiglib
 
 import "testing"
 
-func TestArraySearchString(t *testing.T) {
+func TestArraySearch(t *testing.T) {
 	a := []string{"a", "b", "c", "d"}
-	if ArraySearchString(a, "c") != 2 {
-		t.Error(`ArraySearchString([]string{"a", "b", "c", "d"}, "c") should be = 2`)
+	if ArraySearch(a, "c") != 2 {
+		t.Error(`ArraySearch([]string{"a", "b", "c", "d"}, "c") should be = 2`)
 	}
 }

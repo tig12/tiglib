@@ -8,22 +8,11 @@
 **/
 package tiglib
 
-// Equivalent of php function array_unique for a slice of strings
-func ArrayUniqueString(e []string) []string {
-	r := []string{}
+// ArrayUnique is an equivalent of php function array_unique - generic version
+func ArrayUnique[T comparable](e []T) []T {
+	r := []T{}
 	for _, s := range e {
-		if !InArrayString(s, r[:]) {
-			r = append(r, s)
-		}
-	}
-	return r
-}
-
-// Equivalent of php function array_unique for a slice of ints
-func ArrayUniqueInt(e []int) []int {
-	r := []int{}
-	for _, s := range e {
-		if !InArrayInt(s, r[:]) {
+		if !InArray(s, r[:]) {
 			r = append(r, s)
 		}
 	}

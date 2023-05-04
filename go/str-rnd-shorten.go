@@ -3,8 +3,6 @@
     Ex: StrRandomShorten("6022489e0260daa8ef4af916cf456f07", 8) returns "589a89f4"
     rand.Seed() is not called, so different executions for a given string return the same result.
 
-    Note: depends on in-array.go
-    
     Bug?
     Calling rand.Seed(1) in order to always obtain the same result
     is necessary on debian 10 go 1.17.1 - but not on ubuntu 20.4 go 1.17
