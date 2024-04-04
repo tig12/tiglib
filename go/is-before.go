@@ -1,3 +1,7 @@
+/*
+@copyright  Thierry Graff
+@license    GPL - conforms to file LICENCE located in root directory of current repository.
+*/
 package tiglib
 
 import (
@@ -14,4 +18,3 @@ func IsBefore(t1, t2 time.Time) bool {
 	}
 	return t1.Before(t2)
 }
-

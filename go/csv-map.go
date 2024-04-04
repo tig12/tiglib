@@ -1,14 +1,13 @@
-/******************************************************************************
+/*
+Reads a csv file and loads it in a map.
+Map keys come from the first line of the csv file.
 
-    Reads a csv file and loads it in a map.
-    Map keys come from the first line of the csv file.
+@copyright  Thierry Graff
+@license    GPL - conforms to file LICENCE located in root directory of current repository.
 
-    @copyright  Thierry Graff
-    @license    GPL - conforms to file LICENCE located in root directory of current repository.
-    
-    @history    2019-11-05 05:36:35+01:00, Thierry Graff : Creation
-    @history    2020-12-30 17:40:23+01:00, Luka Peschke : Remove dependance to github.com/recursionpharma/go-csv-map
-********************************************************************************/
+@history    2019-11-05 05:36:35+01:00, Thierry Graff : Creation
+@history    2020-12-30 17:40:23+01:00, Luka Peschke : Remove dependance to github.com/recursionpharma/go-csv-map
+*/
 
 package tiglib
 
@@ -18,9 +17,13 @@ import (
 	"os"
 )
 
-/**
-    @param  sep Column separator
-**/
+/*
+*
+
+	@param  sep Column separator
+
+*
+*/
 func CsvMap(filename string, sep rune) ([]map[string]string, error) {
 	fd, err := os.Open(filename)
 	if err != nil {

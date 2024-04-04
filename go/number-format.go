@@ -1,9 +1,9 @@
-/** 
-    Formats a number with grouped thousands.
-    
-    @copyright  Thierry Graff
-    @license    GPL - conforms to file LICENCE located in root directory of current repository.
-**/
+/*
+Formats a number with grouped thousands.
+
+@copyright  Thierry Graff
+@license    GPL - conforms to file LICENCE located in root directory of current repository.
+*/
 package tiglib
 
 import (
@@ -37,9 +37,13 @@ func numberFormatFloat64(x float64, sep rune) string {
 	return res
 }
 
-/**
-    Adaptation from https://stackoverflow.com/questions/13020308/how-to-fmt-printf-an-integer-with-thousands-comma
-**/
+/*
+*
+
+	Adaptation from https://stackoverflow.com/questions/13020308/how-to-fmt-printf-an-integer-with-thousands-comma
+
+*
+*/
 func numberFormatInt(n int, sep rune) string {
 
 	s := strconv.Itoa(n)

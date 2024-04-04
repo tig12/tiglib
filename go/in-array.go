@@ -1,9 +1,12 @@
-/**
-    Functions equivalent to php function in_array().
-    
-    @copyright  Thierry Graff
-    @license    GPL - conforms to file LICENCE located in root directory of current repository.
-**/
+/*
+Functions equivalent to php function in_array().
+
+Became useless, use instead:
+golang.org/x/exp/slices.Contains()
+
+@copyright  Thierry Graff
+@license    GPL - conforms to file LICENCE located in root directory of current repository.
+*/
 package tiglib
 
 // InArray is equivalent of php function in_array for a slice - generic version

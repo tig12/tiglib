@@ -1,7 +1,7 @@
-/**
-    @copyright  Thierry Graff
-    @license    GPL - conforms to file LICENCE located in root directory of current repository.
-**/
+/*
+@copyright  Thierry Graff
+@license    GPL - conforms to file LICENCE located in root directory of current repository.
+*/
 package tiglib
 
 import (
@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-// Renvoie une date YYYY-MM-DD
+// Returns a date YYYY-MM-DD
 func DateIso(t time.Time) string {
 	if t.IsZero() {
 		return ""
@@ -17,7 +17,7 @@ func DateIso(t time.Time) string {
 	return fmt.Sprintf("%d-%02d-%02d", t.Year(), t.Month(), t.Day())
 }
 
-// Renvoie une date JJ/MM/AAAA
+// Returns a date JJ/MM/AAAA
 func DateFr(t time.Time) string {
 	if t.IsZero() {
 		return ""
@@ -25,7 +25,7 @@ func DateFr(t time.Time) string {
 	return fmt.Sprintf("%02d/%02d/%d", t.Day(), t.Month(), t.Year())
 }
 
-// Renvoie une date du style "12 septembre 2019"
+// Returns a like "12 septembre 2019"
 func DateFrText(t time.Time) string {
 	if t.IsZero() {
 		return ""

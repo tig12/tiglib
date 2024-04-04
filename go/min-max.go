@@ -1,7 +1,7 @@
-/**
-    @copyright  Thierry Graff
-    @license    GPL - conforms to file LICENCE located in root directory of current repository.
-**/
+/*
+@copyright  Thierry Graff
+@license    GPL - conforms to file LICENCE located in root directory of current repository.
+*/
 package tiglib
 
 // Returns the min and max values of slice of strings

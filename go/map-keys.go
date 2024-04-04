@@ -1,7 +1,7 @@
-/**
-    @copyright  Thierry Graff
-    @license    GPL - conforms to file LICENCE located in root directory of current repository.
-**/
+/*
+@copyright  Thierry Graff
+@license    GPL - conforms to file LICENCE located in root directory of current repository.
+*/
 package tiglib
 
 // MapKeys returns a slice containing the keys of a map - generic version.
@@ -27,4 +27,3 @@ func MapKeysStringInt(m map[string]int) (keys []string) {
 	}
 	return keys
 }
-

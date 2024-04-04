@@ -1,8 +1,6 @@
 
 Provides functions in php, javascript and go.
 
-Designed to copy the code needed, and nothing else.
-
-No dependency management.
+Designed to copy the code needed, and nothing else (no dependency management).
 
 Repository created by Thierry Graff, 2019-06-11.
