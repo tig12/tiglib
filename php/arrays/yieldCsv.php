@@ -8,16 +8,19 @@
 ********************************************************************************/
 namespace tiglib\arrays;
 
-
 class yieldCsv{
     
     /**
-        Transmits the yield from tiglib.filesystem.yieldFile
-        
-        Fills a csv file to an array of lines associative arrays.
-        
-        All lines are upposed to have the same number of fields (no check is done).
+        Generator function to read a csv file line by line.
+        Each line of the file is yielded as a regular array.
+        All lines of the csv file must have the same number of fields (no check is done).
+        Usage :
+            $lines = yieldCsv::loop($filename);
+            foreach($lines as $line){
+                // $line is a regular array
+            }
         @param      $filename Absolute path to the csv file
+        @param      $delimiter field delimiter used in the csv file.
     **/
     public static function loop($filename, $separator=';'){
         if (!$fileHandle = fopen($filename, 'r')) {
@@ -30,4 +33,4 @@ class yieldCsv{
         fclose($fileHandle);
     }
     
-}// end class
+} // end class

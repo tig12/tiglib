@@ -11,12 +11,17 @@ namespace tiglib\arrays;
 class yieldCsvAsso {
     
     /**
-        Yields line by line a csv file.
-        The first line of the array is considered as the header, containing the field names.
-        Each line is yielded as an array [field name => value, ...]
-        All lines are supposed to have the same number of fields (no check is done).
+        Generator function to read a csv file line by line.
+        Each line of the file is yielded as an associative array (except the first line).
+        The first line of the csv file must contain the field names (no check is done).
+        All lines of the csv file must have the same number of fields (no check is done).
+        Usage :
+            $lines = yieldCsv::loop($filename);
+            foreach($lines as $line){
+                // $line is an associative array
+            }
         @param  $filename Absolute path to the csv file
-        @param  $sep Separator
+        @param  $sep Field separator in the input file.
     **/
     public static function loop($filename, $sep=';'){
         if (!$fileHandle = fopen($filename, 'r')) {
@@ -37,4 +42,4 @@ class yieldCsvAsso {
         fclose($fileHandle);
     }
     
-}// end class
+} // end class

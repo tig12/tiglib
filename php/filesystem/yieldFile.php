@@ -8,16 +8,11 @@
 ********************************************************************************/
 namespace tiglib\filesystem;
 
-
 class yieldFile{
     
     /**
-        Fills a csv file to an array of associative arrays.
-        The first line of the array is considered as the header, containing the field names.
-        All lines are upposed to have the same number of fields (no check is done).
-        @param      $filename Absolute path to the csv file
-        @param      $delimiter field delimiter (one character only).
-        @return     false or associative array
+        Generator function to read a file line by line.
+        @param      $filename Absolute path to the file.
     **/
     public static function loop($filename){
         if (!$fileHandle = fopen($filename, 'r')) {
@@ -29,4 +24,4 @@ class yieldFile{
         fclose($fileHandle);
     }
     
-}// end class
+} // end class
