@@ -15,12 +15,12 @@ use tiglib\timezone\offset;
 
 class offsetTest extends TestCase{
     
-    public function testCompute(){
-        $this->assertEquals( '+02:00', offset::compute('2019-06-20', 'Europe/Paris') );
-        $this->assertEquals( '+02:00', offset::compute('2019-06-20 18:45:58', 'Europe/Paris') );
+    public function testComputeOlson(){
+        $this->assertEquals( '+02:00', offset::computeOlson('2019-06-20', 'Europe/Paris') );
+        $this->assertEquals( '+02:00', offset::computeOlson('2019-06-20 18:45:58', 'Europe/Paris') );
         
-        $this->assertEquals( '+01:00', offset::compute('2019-01-20', 'Europe/Paris') );
-        $this->assertEquals( '+01:00', offset::compute('2019-01-20 18:45:58', 'Europe/Paris') );
+        $this->assertEquals( '+01:00', offset::computeOlson('2019-01-20', 'Europe/Paris') );
+        $this->assertEquals( '+01:00', offset::computeOlson('2019-01-20 18:45:58', 'Europe/Paris') );
     }
     
     public function testFormat(){

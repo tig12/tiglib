@@ -2,9 +2,12 @@
 /** 
     @copyright  Thierry Graff
     @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
+    TODO Add this test to the php unit test suite
 **/
+namespace tiglib\dag;
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'DAGStringNode.php';
+//require_once __DIR__ . DIRECTORY_SEPARATOR . 'DAGStringNode.php';
 
 $streetDancer = new DAGStringNode('streetDancer');
 $operaDancer = new DAGStringNode('operaDancer');
@@ -24,9 +27,10 @@ $ticketChecker->addEdge($operaEmployee);
 $streetArtist->addEdge($artist);
 $dancer->addEdge($artist);
 
-//echo "\n"; print_r($streetDancer->getRelatedNodes()); echo "\n";
-echo "streetDancer: \n"; print_r($streetDancer->getReachableAsStrings()); echo "\n";
-echo "ticketChecker: \n"; print_r($ticketChecker->getReachableAsStrings()); echo "\n";
-echo "operaEmployee: \n"; print_r($operaEmployee->getReachableAsStrings()); echo "\n";
-echo "operaDancer: \n"; print_r($operaDancer->getReachableAsStrings()); echo "\n";
+// echo "\n"; print_r($streetDancer->getRelatedNodes()); echo "\n";
+
+// echo "streetDancer: \n"; print_r($streetDancer->getReachableAsStrings()); echo "\n";
+// echo "ticketChecker: \n"; print_r($ticketChecker->getReachableAsStrings()); echo "\n";
+// echo "operaEmployee: \n"; print_r($operaEmployee->getReachableAsStrings()); echo "\n";
+// echo "operaDancer: \n"; print_r($operaDancer->getReachableAsStrings()); echo "\n";
 

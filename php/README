@@ -16,5 +16,5 @@ use \tiglib\time\HHMM2minutes;
 echo HHMM2minutes::compute('12:34') . "\n";
 
 ---------- unit tests ----------
-phpunit --bootstrap autoload.php 
+phpunit --bootstrap autoload.php .
 phpunit --bootstrap autoload.php time/HHMM2minutesTest.php

@@ -127,7 +127,7 @@ class offset_it{
         
         // default php behaviour
         $case = self::CASE_PHP_DEFAULT;
-        $offset = offset::compute($date, 'Europe/Rome', $format);
+        $offset = offset::computeOlson($date, 'Europe/Rome', $format);
         return [$offset, $err, $case];
     }
 
