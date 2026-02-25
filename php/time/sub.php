@@ -30,9 +30,8 @@ class sub{
     public static function execute($date, $offset){
         preg_match(self::PATTERN_OFFSET, $offset, $matches);
         if(count($matches) != 4 && count($matches) != 5){
-            throw new \Exception("tiglib\\time\\add - INVALID OFFSET: $offset");
+            throw new \Exception("tiglib\\time\\sub - INVALID OFFSET: $offset");
         }
-//echo "\n<pre>"; print_r($matches); echo "</pre>\n";
         $sign = $matches[1];
         $h = (int)$matches[2];
         $m = (int)$matches[3];
@@ -41,18 +40,17 @@ class sub{
             $dt = new \DateTime($date);
         }
         catch(\Exception $e){
-            throw new \Exception("tiglib\\time\\add - INVALID DATE: $date");
+            throw new \Exception("tiglib\\time\\sub - INVALID DATE: $date");
         }
         try{
             $di = new \DateInterval('PT'.$h.'H'.$m.'M'.$s.'S');
         }
         catch(\Exception $e){
-            throw new \Exception("tiglib\\time\\add - INVALID OFFSET: $offset");
+            throw new \Exception("tiglib\\time\\sub - INVALID OFFSET: $offset");
         }
         if($sign == '-'){
             $di->invert = -1;
         }
-//echo "offset = $offset - result = $sign / $h / $m / $s\n";
         $dt->sub($di);
         $result = $dt->format('Y-m-d H:i');
         if(strlen($date) == 19 || strlen($offset) == 9){
