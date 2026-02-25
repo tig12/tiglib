@@ -12,8 +12,7 @@ namespace tiglib\arrays;
 use PHPUnit\Framework\TestCase;
 use tiglib\arrays\sortByKey;
 
-
-class flattenAssociativeTest extends TestCase{
+class flattenAssociativeTest extends TestCase {
     
     public function test1(){
         $arr = [

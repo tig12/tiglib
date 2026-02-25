@@ -20,7 +20,7 @@ class csvRegular{
     **/
     public static function compute($filename, $delimiter=';'){
         $res = [];
-        if (($handle = fopen($filename, "r")) !== FALSE) {
+        if (($handle = fopen($filename, 'r')) !== FALSE) {
             while (($data = fgetcsv($handle, 0, $delimiter)) !== false){
                 if(count($data) == 1 && $data[0] == ''){
                     continue; // skip empty lines

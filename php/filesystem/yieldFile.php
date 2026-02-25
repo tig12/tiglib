@@ -1,6 +1,12 @@
 <?php
 /******************************************************************************
-
+    
+    Reads a file line by line.
+    Using yield permits to avoid loading the whole file in memory.
+    Usage:
+        $file = 'toto.txt'; // or 'compress.bzip2:///path/tot/toto.txt.bz2'
+        foreach(yieldFile::loop($file) as $line){}
+    
     @copyright  Thierry Graff
     @license    GPL - conforms to file LICENCE located in root directory of current repository.
     
