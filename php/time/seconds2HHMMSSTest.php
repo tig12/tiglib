@@ -37,5 +37,4 @@ class seconds2HHMMSSTest extends TestCase{
         $this->assertEquals( seconds2HHMMSS::compute(-29.9), seconds2HHMMSS::compute(29.9) );
     }
     
-    
 }// end class

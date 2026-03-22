@@ -12,12 +12,11 @@ namespace tiglib\time;
 use PHPUnit\Framework\TestCase;
 use \tiglib\time\HHMM2minutes;
 
-
 class HHMM2minutesTest extends TestCase{
 
     public function test0(){
         $this->assertEquals( 0, HHMM2minutes::compute('+00:00') );
-        $this->assertEquals( 0, HHMM2minutes::compute('+00:00') );
+        $this->assertEquals( 0, HHMM2minutes::compute('00:00') );
         $this->assertEquals( 0, HHMM2minutes::compute('-00:00') );
     }
     
@@ -58,7 +57,7 @@ class HHMM2minutesTest extends TestCase{
     }
     
     /**
-        Tests if the function works when separator is a strange string
+        Tests if the function works when separator is a strange string.
     **/
     public function testSeparator(){
         $this->assertEquals( 124, HHMM2minutes::compute('02:04') );
@@ -80,7 +79,5 @@ class HHMM2minutesTest extends TestCase{
         $this->assertEquals( false, HHMM2minutes::compute('02:74') );
         $this->assertEquals( false, HHMM2minutes::compute('24:12') );
     }
-    
-    
     
 }// end class
