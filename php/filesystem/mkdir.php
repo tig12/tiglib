@@ -2,7 +2,9 @@
 /******************************************************************************
     Like mkdir() but echoes a message if the directory is created on disk.
     
-    @license    GPL
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2020-05-18 10:38:54+02:00, Thierry Graff : Creation
 ********************************************************************************/
 

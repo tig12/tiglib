@@ -12,12 +12,12 @@
 
 namespace tiglib\filesystem;
 
-class rrmdir{
+class rrmdir {
     
-   public static function execute($dir){
+   public static function execute($dir) {
         $files = array_diff(scandir($dir), array('.','..'));
         foreach ($files as $file) {
-            (is_dir("$dir/$file")) ? self::execute("$dir/$file") : unlink("$dir/$file");
+            (is_dir("$dir/$file")) ? self::execute("$dir/$file") : unlink("$dir/$file"); // recursive here
         }
         return rmdir($dir);
     }

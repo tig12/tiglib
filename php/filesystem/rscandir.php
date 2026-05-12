@@ -32,8 +32,9 @@
     @todo convert $dir to $params['dir']
     @todo handle param check in rscandir
     
-    @licence    GPL
-    @copyright  jetheme.org
+    @copyright  Thierry Graff
+    @license    GPL - conforms to file LICENCE located in root directory of current repository.
+    
     @history    2010-10-02T20:13:10+02:00, Thierry Graff : Creation 
     @history    2013-05-19 23:47:54+02:00, Thierry Graff : add cut-path parameter
 **/
